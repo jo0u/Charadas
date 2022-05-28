@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CafBesto</title>
+    
+</head>
+<body>
+    <style>
+    body{
+        background-color:	#DCDCDC; 
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    table{
+        background: rgb(161, 198, 207);
+        margin-bottom: 1cm;
+        width: 60%;
+ }
+    
+input{
+    
+    background: rgb(161, 198, 207);
+}
+
+    
+    </style>
+
+
+
+    <!--***************************Primeira Charada*********************************-->
+    <h1>CafeBesto</h1>
+    <table align="center" border="1" >
+    <tr>
+        <td>
+            <form action = "sugestao.html">
+                <h2>O que os personagens do Toy Story falam quando alguém espirra? </h2>
+                R:<input type="button" id="botao" aling="50dp" value="Mostra Resposta"onclick="mostrar()"/>
+                Avaliação da charada:
+                <select id = "slc" >
+                    
+                    <option id="1" value="ruim" >Ruim</option>
+                    <option id="2" value="regular" >Regular</option>
+                    <option id="3" value="bom" >Bom</option>
+                    <option id="4" value="execelente" >Execelente</option>
+                </select>
+                <input type="button" id="btnValor" value="Avaliar" onclick="votar()"/>
+                enviar Sugestão:
+                <input type="submit" value="Enivar Sugestão"  id="sugestao" onclick="sugestao()"/>
+            </td>
+    </tr>
+</form>
+</table>
+
+<!--*******************************************SEGUNDA CHARADA****************************************************-->
+
+<table align="center" border="1" >
+        <tr>
+            <td>
+                <form action = "sugestao.html">
+                    <h2>Qual é o estado brasileiro que está em todas as igrejas? </h2>
+                    R:<input type="button" id="botao1" aling="50dp" value="Mostra Resposta"onclick="mostrar1()"/>
+                    Avaliação da charada:
+                    <select id = "slc1" >
+                        
+                        <option id="5" value="ruim" >Ruim</option>
+                        <option id="6" value="regular" >Regular</option>
+                        <option id="7" value="bom" >Bom</option>
+                        <option id="8" value="execelente" >Execelente</option>
+                    </select>
+                    <input type="button" id="btnValor1" value="Avaliar" onclick="votar1()"/>
+                    enviar Sugestão:
+                    <input type="submit" value="Enivar Sugestão"  id="sugestao" onclick="sugestao()"/>
+                </td>
+        </tr>
+    </form>
+    </table>
+
+
+    <table align="center" border="1" >
+            <tr>
+                <td>
+                    <form action = "sugestao.html">
+                        <h2>Qual o cantor que derrubou o Thanos? </h2>
+                        R:<input type="button" id="botao2" aling="50dp" value="Mostra Resposta"onclick="mostrar2()"/>
+                        Avaliação da charada:
+                        <select id = "slc2" >
+                            
+                            <option id="9" value="ruim" >Ruim</option>
+                            <option id="10" value="regular" >Regular</option>
+                            <option id="11" value="bom" >Bom</option>
+                            <option id="12" value="execelente" >Execelente</option>
+                        </select>
+                        <input type="button" id="btnValor2" value="Avaliar" onclick="votar2()"/>
+                        enviar Sugestão:
+                        <input type="submit" value="Enivar Sugestão"  id="sugestao" onclick="sugestao()"/>
+                    </td>
+            </tr>
+        </form>
+        </table>
+
+<script>
+//*********PRIMEIRA CHARADA***************************************************************************
+    function mostrar(){
+        b1 = document.getElementById("botao")
+        b1.type="text"
+        b1.value="Sau-Woody"
+        b1.disabled = "true"
+        
+        }
+            function votar(){
+            btnValor = document.getElementById("btnValor")
+            slc = document.getElementById("slc")
+            slc.disabled ="true"
+            btnValor.type="hidden"
+            btn.disabled="true"
+            }
+// ********************Segunda Charada****************************************************************
+            function mostrar1(){
+        b1 = document.getElementById("botao1")
+        b1.type="text"
+        b1.value="Espirito Santo"
+        b1.disabled = "true"
+       
+        }
+        function votar1(){
+            btnValor1 = document.getElementById("btnValor1")
+            slc1 = document.getElementById("slc1")
+            slc1.disabled ="true"
+            btnValor1.type="hidden"
+            btn1.disabled="true"
+            }
+//****************************TERCEIRA CHARADA************************************************************      
+function mostrar2(){
+        b2 = document.getElementById("botao2")
+        b2.type="text"
+        b2.value="Cae-Thanos Veloso?"
+        b2.disabled = "true"
+}
+function votar2(){
+            btnValor2 = document.getElementById("btnValor2")
+            slc2 = document.getElementById("slc2")
+            slc2.disabled ="true"
+            btnValor2.type="hidden"
+            btn2.disabled="true"
+            }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sugestão</title>
+</head>
+<body>
+    <h1>Sugestões CafeBesto</h1>
+
+    <table>
+             <tr><td><li> <label>Nome:</label></td><td><Input type="text" required="required" id="nome" ></Input></li></td></tr>
+     <tr><td><li><label>Idade:</label></td><td><input type="number" required="required" id="id" ></input></td></tr> </li>               
+    </table>
+</li><div><label>Sugestão</label></div>
+                       <div><textarea required="required" rows="3" cols="33" id="sug" ></textarea></div></li> 
+                       <div><Input required="required" type="button" value="Voltar" onclick="voltar()" ></Input>  
+                       <Input required="required" type="button" value="Enviar Sugestão" onclick="enviar()"></Input></div>   
+                    
+</body>
+   <style>
+   table{
+       padding: 5px;
+       margin: 5px;
+   }
+
+   
+   </style>
+
+        <script>
+            function enviar(){
+                
+                
+                nome = document.getElementById("nome").value
+                texto = document.getElementById("sug").value
+                id = document.getElementById("id").value
+                
+                
+                if((nome =="" || texto== "" || id == "")){
+                    
+                    alert("(Erro!!!) Preencha os Campos Corretamente")
+                }else{
+                    v1= document.getElementById("nome")
+                    alert("Muito Obrigado pela Sugestão: sr(a) "+v1.value)
+                
+                
+                }                               
+            }
+
+            function voltar(){
+                history.go(-1)
+            }
+
+        </script>
+
+</html>
